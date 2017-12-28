@@ -1,0 +1,55 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+
+body{
+    display: flex;
+    align-items: center;
+    background: url(img/tlo.jpg) no-repeat center/100%;
+    background-size: cover;
+}
+
+body::after{
+    content: '';
+    background: rgba(0, 0, 0, 0.589);
+    height: 100%;
+    width: 100%;
+    z-index: 2;
+    position: fixed;
+}
+.first-section{
+    display: flex;
+    height: 100vh;
+    width: 459px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    z-index: 5;
+}
+
+.key{
+    height: 120px;
+    width: 120px;
+    background-color: rgba(255, 255, 255, 0.548);
+    margin: 0 25px 25px 0;
+    transition: all 0.1s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    border-radius: 10px;
+    border: 4px solid #000;
+}
+
+.pushed{
+    border-color: #ffc600;
+    transform: scale(1.1);
+    box-shadow: 0 0 10px #ffc600;
+    font-weight: 900;
+    font-size: 60px;
+    background: rgba(0, 0, 0, 0.445);
+    color: #fff;
+}
